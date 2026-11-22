@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · SCALED UP</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Inicio</a><a href="privacidad.html">Política de privacidad</a><a href="condiciones.html">Condiciones del servicio</a></nav>
+<h1>Política de privacidad</h1>
+<p class="nota">Última actualización: 22 de noviembre de 2026.</p>
+
+<p>SCALED UP es una herramienta privada que usa una sola persona (el "operador", dueño de los canales) en su computadora. Esta política describe qué datos usa la herramienta al conectarse con YouTube, para qué y cómo se guardan. Refleja el funcionamiento real del código.</p>
+
+<h2>1. Permisos de Google que solicita</h2>
+<ul>
+<li><code>youtube.upload</code>: subir videos propios del operador, siempre en modo privado.</li>
+<li><code>youtube</code>: leer la información del propio canal y crear listas de reproducción o agregar videos a ellas.</li>
+<li><code>youtube.force-ssl</code>: leer los comentarios de los videos del propio canal y publicar respuestas desde ese canal. Solo se pide para el canal que usa respuestas automáticas.</li>
+<li><code>yt-analytics.readonly</code>: leer las estadísticas del propio canal. Es de solo lectura.</li>
+</ul>
+<p>La herramienta no pide permisos de ingresos, no accede a Gmail, Drive ni a otros servicios de Google, y no accede a canales que no sean del operador.</p>
+
+<h2>2. Datos que usa</h2>
+<ul>
+<li><strong>Del canal del operador:</strong> identificador, nombre y estadísticas del canal; los videos que sube y sus listas de reproducción; estadísticas de YouTube Analytics (vistas, vistas comprometidas, minutos vistos, retención, me gusta, comentarios, suscriptores, países y fuentes de tráfico).</li>
+<li><strong>Comentarios públicos en los videos del operador:</strong> texto del comentario, nombre visible y identificador del canal de quien comenta, identificador y fecha del comentario, y si ya tiene respuesta. Se leen para detectar la palabra clave pedida en el video.</li>
+<li><strong>Datos públicos de YouTube:</strong> resultados de búsqueda y estadísticas públicas de videos y canales (vistas, suscriptores, títulos), para investigar temas.</li>
+</ul>
+<p>La herramienta no recopila datos de personas fuera de YouTube, no usa cookies ni rastreadores, y esta web no recopila ningún dato.</p>
+
+<h2>3. Para qué se usan</h2>
+<ul>
+<li>Publicar en privado los videos del operador y ordenarlos en listas.</li>
+<li>Analizar el rendimiento de sus propios videos para mejorar los próximos.</li>
+<li>Responder una sola vez, con el recurso prometido en el video, a quien comenta la palabra clave. No responde a comentarios sin la palabra clave ni a los del propio canal, y no responde dos veces a la misma persona en el mismo video.</li>
+<li>Investigar temas con datos públicos.</li>
+</ul>
+<p>Los datos de Google no se venden, no se usan para publicidad, no se transfieren a terceros para su propio uso y no se usan para entrenar modelos de inteligencia artificial.</p>
+
+<h2>4. Dónde se guardan</h2>
+<ul>
+<li><strong>Permisos (tokens de acceso de Google):</strong> en archivos dentro de la carpeta de usuario de Windows del operador, fuera de la carpeta del proyecto. Nunca se suben a internet ni se comparten.</li>
+<li><strong>Estadísticas y datos públicos:</strong> en archivos locales de la computadora del operador, como caché para no repetir consultas.</li>
+<li><strong>Registro de respuestas:</strong> por cada comentario respondido se guarda localmente el identificador del comentario, el nombre visible y el identificador del canal de quien comentó, la palabra clave, los primeros 200 caracteres del comentario, la fecha y el identificador de la respuesta. Sirve para no responder dos veces.</li>
+</ul>
+<p>No hay servidores, bases de datos en la nube ni copias de estos datos fuera de esa computadora, salvo lo indicado en el punto 5.</p>
+
+<h2>5. Asistente de inteligencia artificial</h2>
+<p>El operador usa Claude Code, un asistente de Anthropic, para analizar sus estadísticas y redactar contenido. Cuando el operador se lo pide, partes de estos datos (por ejemplo, estadísticas de sus videos o comentarios) pueden enviarse a Anthropic para ese procesamiento puntual. Se rige por las condiciones de Anthropic. Esos datos no se usan para otros fines.</p>
+
+<h2>6. Conservación</h2>
+<p>Los permisos se conservan hasta que el operador los revoca. La caché y los registros locales se conservan en la computadora del operador hasta que los borra. Cualquier persona puede pedir que se borren los datos de su comentario de esos registros (punto 8).</p>
+
+<h2>7. Seguridad</h2>
+<p>Todas las conexiones con Google usan HTTPS. Los archivos quedan protegidos por la cuenta de Windows del operador. La herramienta no guarda contraseñas: el acceso se autoriza en la página de Google y se puede revocar en cualquier momento.</p>
+
+<h2>8. Revocar el acceso y pedir la eliminación de datos</h2>
+<ul>
+<li><strong>Revocar el acceso de la herramienta a una cuenta de Google:</strong> en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, elegir la aplicación y quitar el acceso. Al revocarlo, la herramienta deja de poder leer o publicar nada.</li>
+<li><strong>Si comentaste en un video de SCALED UP</strong> y querés que se borren tus datos de los registros locales, escribí al correo de asistencia que figura en la pantalla de autorización de Google de esta aplicación, o dejá un comentario pidiéndolo en cualquier video del canal. Se borran en un plazo de 30 días. También podés borrar tu comentario desde YouTube.</li>
+</ul>
+
+<h2>9. Servicios de Google y YouTube</h2>
+<p>SCALED UP usa los Servicios de API de YouTube. Al interactuar con sus funciones aceptás los <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a>. Los datos que trata Google se rigen por la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>. El uso de los datos recibidos de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+<h2>10. Cambios</h2>
+<p>Si la herramienta cambia la forma de usar los datos, esta página se actualiza y cambia la fecha de arriba.</p>
+</main>
+</body>
+</html>
